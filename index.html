@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Service Details</title>
+</head>
+<body>
+    <h1>Sevices Details</h1>
+    <div class="content">
+        <form id="add-service-form">
+            <h3>Contact Details:</h3>
+            <input type="text" name="name" placeholder="Enter the name">
+            <input type="number" name="number" placeholder="Enter the phone number">
+            <input type="text" name="hall" placeholder="Hall name">
+            <input type="number" name="amount" placeholder="Enter the Amount"> 
+            <select name="service">
+            
+              <option>Basic Service</option>
+              <option>Advance Service</option>
+            </select>
+            
+            <button>Add Details</button>
+            
+        </form>
+
+        <ul id="services-details-list">
+
+        </ul>
+    </div>
+  
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyBINh2BgogDBl5dMwKf4gOx3-th3Riurc8",
+          authDomain: "dashborad-1aefd.firebaseapp.com",
+          databaseURL: "https://dashborad-1aefd.firebaseio.com",
+          projectId: "dashborad-1aefd",
+          storageBucket: "dashborad-1aefd.appspot.com",
+          messagingSenderId: "1050361986997",
+          appId: "1:1050361986997:web:c7fd1f3ae717a039ba63fc",
+          measurementId: "G-EDS41B3JBS"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+      </script>
+    <script src="app.js"></script>
+</body>
+</html>
